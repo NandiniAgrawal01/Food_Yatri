@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Page</title>
+    <link rel="icon" href="/Food_Yatri/Project/res/tab.ico" type="image/x-icon">
     <link rel="stylesheet" href="/Food_Yatri/Project/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
@@ -14,6 +15,17 @@
         min-height: 80vh;
         background-image: url(/Food_Yatri/Project/res/Login.jpg);
       }
+
+      .active {
+            padding: 10px 20px;
+            border-radius: 25px;
+            background-color: red;
+            color: white;
+        }
+
+        nav .active:hover {
+            color: white;
+        }
 
       .signup_box {
         margin-top: 100px;
@@ -92,13 +104,13 @@
     <header>
       <nav>
         <div class="logo">
-          <img height="50" src="/Food_Yatri/Project/res/logo.png" alt="Logo" />
+          <a href="/Food_Yatri/Project/index.html"><img height="75" src="/Food_Yatri/Project/res/logo.png" alt="Logo" /></a>
         </div>
         <ul>
           <li>
             <a href="/Food_Yatri/Project/components/signup.html">Sign up</a>
           </li>
-          <li><a href="/Food_Yatri/Project/components/login.html">Login</a></li>
+          <li><a href="/Food_Yatri/Project/components/login.html" class="active">Login</a></li>
           <li><a href="/Food_Yatri/Project/components/bestseller.html">Best-Seller</a></li>
           <li><a href="/Food_Yatri/Project/components/uploadcontent.html">Upload Content</a></li>
           <li><a href="/Food_Yatri/Project/components/vlogger.html">Top Vloggers</a></li>
