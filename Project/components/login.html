@@ -28,7 +28,7 @@
         }
 
       .signup_box {
-        margin-top: 100px;
+        margin-top: 125px;
         width: 500px;
         height: auto;
         border-radius: 25px;
@@ -40,19 +40,19 @@
         font-size: 40px;
         text-align: center;
         padding: 30px;
-        /* margin-left: 250px; */
+        margin-left: 175px;
       }
 
       .login_input {
-        max-width: 300px;
+        width: 95%;
         margin: 0 auto;
         /* background: rgba(255, 255, 255, 0.8); */
-        padding: 20px;
-        border-radius: 10px;
+        padding: 10px;
+        border-radius: 20px;
         /* display: flex; */
-        align-items: center;
-        justify-content: space-between;
-        /* margin-left: 150px; */
+        /* align-items: center; */
+        /* justify-content: space-between; */
+        margin-left: 50px;
       }
 
       .textbox {
@@ -62,7 +62,7 @@
         background-color: #f2f2f2;
         border-radius: 20px;
         padding: 10px;
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
       }
 
       .password-container {
@@ -74,6 +74,7 @@
         border-radius: 20px;
         padding: 10px;
         margin-bottom: 20px; 
+        margin-left: 25px;
     }
     .toggle-password {
       position:absolute;
@@ -129,6 +130,7 @@
       <h1 id="signup_heading">Login</h1>
       <div class="login_input">
         <form id="loginForm" action="/login" method="post">
+          <div class="login_input">
           <input
             type="text"
             class="textbox"
@@ -136,7 +138,8 @@
             name="username"
             placeholder="Username"
             required
-          /><br />
+          />
+        </div><br />
           <div class="password-container">
             <input
               type="password"
@@ -148,7 +151,9 @@
             />
             <i class="toggle-password fas fa-eye" id="togglePassword"></i>
           </div><br>
+          <div class="login_input">
           <button type="submit" id="submit"><b>Submit</b></button>
+          </div>
         </form>
       </div>
     </section>

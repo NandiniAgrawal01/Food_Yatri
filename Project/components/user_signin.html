@@ -32,19 +32,22 @@
         padding: 30px;
         /* margin-left: 250px; */
         margin-bottom: 0px;
+        margin-left: 180px;
       }
 
       .login_input {
-        max-width: 300px;
+        position: relative;
+        width: 95%;
         margin: 0 auto;
+        height: 30px;
         /* background: rgba(255, 255, 255, 0.8); */
-        padding: 20px;
-        border-radius: 10px;
+        padding: 10px;
+        border-radius: 20px;
         /* display: flex; */
-        align-items: center;
-        justify-content: space-between;
-        margin-left: 100px;
-        
+        /* align-items: center; */
+        /* justify-content: space-between; */
+        margin-left: 50px;
+        margin-bottom: 20px;
       }
 
       .textbox {
@@ -65,6 +68,7 @@
         border-radius: 20px;
         padding: 10px;
         margin-bottom: 20px; 
+        margin-left: 25px;
     }
     .toggle-password {
       position:absolute;
@@ -119,6 +123,7 @@
       <h1 id="signup_heading">Sign In</h1>
       <div class="login_input">
         <form id="loginForm" action="/login" method="post">
+          <div class="login_input">
           <input
             type="text"
             class="textbox"
@@ -127,6 +132,8 @@
             placeholder="Name"
             required
           /><br />
+        </div>
+        <div class="login_input">
           <input
             type="text"
             class="textbox"
@@ -135,6 +142,7 @@
             placeholder="Email"
             required
           /><br />
+        </div>
           <div class="password-container">
           <input
             type="password"
@@ -151,7 +159,9 @@
             <i class="toggle-password fas fa-eye" id="togglePassword"></i>
           </div> -->
           <br />
+          <div class="login_input">
           <button type="submit" id="submit"><b>Submit</b></button>
+        </div>
         </form>
       </div>
     </section>
