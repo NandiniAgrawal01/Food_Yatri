@@ -89,22 +89,22 @@
 <body>
   <div class="wrapper">
     <div class="form-wrapper sign-in">
-      <form action="">
+      <form id="form">
         <h2>Feed</h2>
         <div class="input-group">
-          <input type="url" required>
+          <input type="url" id="url" required>
           <label for="">Add Vlog URL</label>
         </div>
         <div class="input-group">
-          <input type="text" required>
+          <input type="text" id="food name" required>
           <label for="">Food Name</label>
         </div>
         <div class="input-group">
-          <input type="text" required>
+          <input type="text" id="food location" required>
           <label for="">Food Location</label>
         </div>
         <div class="input-group">
-          <input type="text" required>
+          <input type="text" id="shop name" required>
           <label for="">Shop Name</label>
         </div>
         <button type="submit"><b>Post</b></button>
@@ -113,7 +113,26 @@
   </div>
 
   <script>
-    const wrapper = document.querySelector('.wrapper');
+    var form = document.getElementById('form')
+    
+    form.addEventListener('submit',function(event){
+      
+        event.preventDefault() //prevents the form from autosubmitting
+
+        var url = document.getElementById('url').value
+        console.log(url)
+
+        var food_name = document.getElementById('food name').value
+        console.log(food_name)
+
+        var food_location = document.getElementById('food location').value
+        console.log(food_location)
+        
+        var shop_name = document.getElementById('shop name').value
+        console.log(shop_name)
+        
+        alert("\n******************************** THANK YOU ******************************** \n\nPost Uploaded Successfully 👍")
+    })
   </script>
 
 </body>
