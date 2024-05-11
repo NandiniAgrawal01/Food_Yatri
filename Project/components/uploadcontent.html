@@ -112,22 +112,22 @@
   </div>
 
   <script>
-    var form = document.getElementById('form')
+    let form = document.getElementById('form')
     
     form.addEventListener('submit',function(event){
       
         event.preventDefault() //prevents the form from autosubmitting
 
-        var url = document.getElementById('url').value
+        let url = document.getElementById('url').value
         console.log(url)
 
-        var food_name = document.getElementById('food name').value
+        let food_name = document.getElementById('food name').value
         console.log(food_name)
 
-        var food_location = document.getElementById('food location').value
+        let food_location = document.getElementById('food location').value
         console.log(food_location)
         
-        var shop_name = document.getElementById('shop name').value
+        let shop_name = document.getElementById('shop name').value
         console.log(shop_name)
         
         alert("\n******************************** THANK YOU ******************************** \n\nPost Uploaded Successfully 👍")
